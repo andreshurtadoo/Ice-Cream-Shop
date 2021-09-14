@@ -1,0 +1,119 @@
+body {
+    background-color: #ebebeb;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .navbar .logo {
+    width: 50px;
+  }
+  
+  .navbar .cart {
+    background-color: transparent;
+    border: 0;
+  }
+  .navbar .cart img {
+    width: 30px;
+  }
+  
+  .cart-container {
+    position: relative;
+  }
+  .cart-products {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    background: #fff;
+    width: 300px;
+    max-height: 400px;
+    height: 0;
+    overflow: scroll;
+  }
+  .cart-products.active {
+    height: auto;
+  }
+  .cart-product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #343a41;
+  }
+  .cart-product.empty {
+    justify-content: center;
+  }
+  .cart-product img {
+    width: 100px;
+  }
+  .cart-product-info {
+    width: 100%;
+  }
+  .cart-product-delete {
+    text-align: right;
+  }
+  .cart-product-delete button {
+    color: #f00;
+    background-color: transparent;
+    border: 0;
+  }
+  .cart-product-delete button:hover {
+    text-decoration: underline;
+  }
+  .cart-product-info {
+    margin-left: 10px;
+  }
+  .cart-product-info p {
+    margin: 0;
+  }
+  .cart-product-info .quantity {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    background-color: #0098d3;
+    color: #fff;
+    padding: 0px 7px;
+    border-radius: 10px;
+  }
+  
+  .change-quantity {
+    text-align: right;
+  }
+  .change-quantity button {
+    background: transparent;
+    border: 1px solid #0098d3;
+    border-radius: 50px;
+    padding: 0px 9px;
+  }
+  
+  .product-list {
+    margin-top: 100px;
+  }
+  .product-container {
+    padding: 10px;
+  }
+  .product {
+    width: 100% !important;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .btn-cart {
+    background-color: transparent;
+    color: #0098d3;
+    border: 1px solid #0098d3;
+    width: 100%;
+    border-radius: 50px;
+  }
+  .btn-cart:hover {
+    background-color: #0098d3;
+    border: 1px solid #0098d3;
+  }
+  .btn-cart:active {
+    background-color: #008abf !important;
+    border: 1px solid #008abf;
+  }
+  
